@@ -2,6 +2,7 @@
 *.slo
 *.lo
 *.o
+*.sdf
 
 # Compiled Dynamic libraries
 *.so
@@ -11,7 +12,10 @@
 *.lai
 *.la
 *.a
-
-/ipch
+#Binaries
+*.exe
+*.pdb
+*.ilk
+*.metagen
 
 *.tlog

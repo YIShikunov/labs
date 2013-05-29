@@ -50,10 +50,11 @@ namespace Lab1 {
 	private: System::Windows::Forms::TextBox^  resLogBox;
 	private: System::Windows::Forms::Label^  resLogLabel;
 	private: System::Windows::Forms::Button^  clearResLogButton;
+	private: System::Windows::Forms::Button^  clearResButton;
 
 
 
-	private: System::Windows::Forms::Button^  clearRes;
+
 
 	private:
 		/// <summary>
@@ -77,7 +78,7 @@ namespace Lab1 {
 			this->resLogBox = (gcnew System::Windows::Forms::TextBox());
 			this->resLogLabel = (gcnew System::Windows::Forms::Label());
 			this->clearResLogButton = (gcnew System::Windows::Forms::Button());
-			this->clearRes = (gcnew System::Windows::Forms::Button());
+			this->clearResButton = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// inputBox
@@ -105,6 +106,7 @@ namespace Lab1 {
 			this->pow2Button->TabIndex = 2;
 			this->pow2Button->Text = L"2^x";
 			this->pow2Button->UseVisualStyleBackColor = true;
+			this->pow2Button->Click += gcnew System::EventHandler(this, &calcExp::pow2Button_Click);
 			// 
 			// resultBox
 			// 
@@ -156,22 +158,24 @@ namespace Lab1 {
 			this->clearResLogButton->TabIndex = 8;
 			this->clearResLogButton->Text = L"Clear Results Log";
 			this->clearResLogButton->UseVisualStyleBackColor = true;
+			this->clearResLogButton->Click += gcnew System::EventHandler(this, &calcExp::clearResLogButton_Click);
 			// 
-			// clearRes
+			// clearResButton
 			// 
-			this->clearRes->Location = System::Drawing::Point(120, 89);
-			this->clearRes->Name = L"clearRes";
-			this->clearRes->Size = System::Drawing::Size(75, 23);
-			this->clearRes->TabIndex = 9;
-			this->clearRes->Text = L"Clear";
-			this->clearRes->UseVisualStyleBackColor = true;
+			this->clearResButton->Location = System::Drawing::Point(13, 115);
+			this->clearResButton->Name = L"clearResButton";
+			this->clearResButton->Size = System::Drawing::Size(75, 23);
+			this->clearResButton->TabIndex = 9;
+			this->clearResButton->Text = L"Clear";
+			this->clearResButton->UseVisualStyleBackColor = true;
+			this->clearResButton->Click += gcnew System::EventHandler(this, &calcExp::clearResButton_Click);
 			// 
 			// calcExp
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(504, 262);
-			this->Controls->Add(this->clearRes);
+			this->Controls->Add(this->clearResButton);
 			this->Controls->Add(this->clearResLogButton);
 			this->Controls->Add(this->resLogLabel);
 			this->Controls->Add(this->resLogBox);
@@ -193,9 +197,26 @@ namespace Lab1 {
 			 }
 private: System::Void expButton_Click(System::Object^  sender, System::EventArgs^  e) 
 		 {
-			  double temp = System::Convert::ToDouble(this->inputBox->Text);
-			  this->resultBox->Text = System::Convert::ToString(exp(temp));
-			  this->resLogBox->Text->Concat()
+			  float temp = System::Convert::ToDouble(this->inputBox->Text);
+			  double res = exp(temp);
+			  this->resultBox->Text = System::Convert::ToString(res);
+			  this->resLogBox->Text +=  "e^" + temp + " = " + System::Convert::ToString(res)+Environment::NewLine;
+		 }
+private: System::Void pow2Button_Click(System::Object^  sender, System::EventArgs^  e) 
+		 {
+			  float temp = System::Convert::ToDouble(this->inputBox->Text);
+			  double res = pow(2, temp);
+			  this->resultBox->Text = System::Convert::ToString(res);
+			  this->resLogBox->Text += "2^" + temp + " = " + System::Convert::ToString(res)+Environment::NewLine;
+		 }
+private: System::Void clearResButton_Click(System::Object^  sender, System::EventArgs^  e) 
+		 {
+			 this->resultBox->Text = "";
+			 this->inputBox->Text = "";
+		 }
+private: System::Void clearResLogButton_Click(System::Object^  sender, System::EventArgs^  e) 
+		 {
+			 this->resLogBox->Text = "";
 		 }
 };
 }

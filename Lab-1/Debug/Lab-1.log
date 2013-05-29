@@ -1,34 +1,35 @@
-﻿Build started 23.04.2013 13:20:48.
-     1>Project "C:\Users\Студент\Documents\GitHub\labs\Lab-1\Lab-1.vcxproj" on node 2 (build target(s)).
+﻿Build started 29.05.2013 12:34:40.
+     1>Project "C:\Users\TJmini\Desktop\labs-master\Lab-1\Lab-1.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Touching "Debug\Lab-1.unsuccessfulbuild".
+         Creating "Debug\Lab-1.unsuccessfulbuild" because "AlwaysCreate" was specified.
        GenerateTargetFrameworkMonikerAttribute:
        Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
        ClCompile:
          All outputs are up-to-date.
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Lab-1.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt "Lab-1.cpp" /clr:nostdlib 
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Lab-1.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt "Lab-1.cpp" /clr:nostdlib 
          Lab-1.cpp
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /analyze- /errorReport:prompt "C:\Users\Студент\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cpp"
-         .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+     1>c:\users\tjmini\desktop\labs-master\lab-1\calcExp.h(200): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\tjmini\desktop\labs-master\lab-1\calcExp.h(207): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+         All outputs are up-to-date.
        CoreResGen:
-         "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /compile calcExp.resX,Debug\Lab1.calcExp.resources
+         "c:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /compile calcExp.resX,Debug\Lab1.calcExp.resources
          Processing resource file "calcExp.resX" into "Debug\Lab1.calcExp.resources".
        ResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\app.res" app.rc 
+         All outputs are up-to-date.
        Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Студент\Documents\GitHub\labs\Debug\Lab-1.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\Lab1.calcExp.resources /MANIFEST /ManifestFile:"Debug\Lab-1.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Студент\Documents\GitHub\labs\Debug\Lab-1.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\TJmini\Desktop\labs-master\Debug\Lab-1.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\Lab1.calcExp.resources /MANIFEST /ManifestFile:"Debug\Lab-1.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\TJmini\Desktop\labs-master\Debug\Lab-1.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
          Debug\AssemblyInfo.obj
          "Debug\Lab-1.obj"
          Debug\stdafx.obj
          "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
-         Lab-1.vcxproj -> C:\Users\Студент\Documents\GitHub\labs\Debug\Lab-1.exe
+         Lab-1.vcxproj -> C:\Users\TJmini\Desktop\labs-master\Debug\Lab-1.exe
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Студент\Documents\GitHub\labs\Debug\Lab-1.exe;#1" /manifest "Debug\Lab-1.exe.intermediate.manifest"
+         c:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\TJmini\Desktop\labs-master\Debug\Lab-1.exe;#1" /manifest "Debug\Lab-1.exe.intermediate.manifest"
        FinalizeBuildStatus:
          Deleting file "Debug\Lab-1.unsuccessfulbuild".
          Touching "Debug\Lab-1.lastbuildstate".
-     1>Done Building Project "C:\Users\Студент\Documents\GitHub\labs\Lab-1\Lab-1.vcxproj" (build target(s)).
+     1>Done Building Project "C:\Users\TJmini\Desktop\labs-master\Lab-1\Lab-1.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.89
+Time Elapsed 00:00:02.35
